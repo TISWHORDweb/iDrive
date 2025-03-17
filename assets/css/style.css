@@ -234,7 +234,9 @@ p {
 
 .text-black {
   color: #000; }
-
+  .bg-black {
+    background: #000; }
+  
 .text-theme {
   color: #cc9b2d; }
 
@@ -806,7 +808,340 @@ section {
     .t-black{
       color:#000 !important
     }
+/* Our Services Section */
+.our-services {
+  padding: 80px 0;
+  background-color: #000; /* Black background */
+}
 
+.service-items {
+  margin-top: 40px;
+}
+
+.service-card {
+  background-color: #1a1a1a; /* Slightly lighter black for contrast */
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(204, 155, 45, 0.2); /* Gold shadow for hover effect */
+}
+
+.service-icon {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.service-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.service-desc {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #ccc; /* Light gray for better readability */
+}
+/* Price Summary Section */
+.price-summary {
+  padding: 80px 0;
+  background-color: #000; /* Black background */
+}
+
+.pricing-items {
+  margin-top: 40px;
+}
+
+.pricing-card {
+  background-color: #1a1a1a; /* Slightly lighter black for contrast */
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pricing-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(204, 155, 45, 0.2); /* Gold shadow for hover effect */
+}
+
+.pricing-icon {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.pricing-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.pricing-desc {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #ccc; /* Light gray for better readability */
+  margin-bottom: 20px;
+}
+
+.pricing-features {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+.pricing-features li {
+  font-size: 14px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.pricing-features i {
+  margin-right: 10px;
+  font-size: 16px;
+}
+/* Mode of Operations Section */
+.mode-of-operations {
+  padding: 80px 0;
+  background-color: #000; /* Black background */
+}
+
+.operations-items {
+  margin-top: 40px;
+}
+
+.operations-card {
+  background-color: #1a1a1a; /* Slightly lighter black for contrast */
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.operations-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(204, 155, 45, 0.2); /* Gold shadow for hover effect */
+}
+
+.operations-icon {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.operations-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.operations-desc {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #ccc; /* Light gray for better readability */
+}
+
+/* Refund/Cancellation Policy Section */
+.refund-policy {
+  padding: 80px 0;
+  background-color: #000; /* Black background */
+}
+
+.policy-items {
+  margin-top: 40px;
+}
+
+.policy-card {
+  background-color: #1a1a1a; /* Slightly lighter black for contrast */
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.policy-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(204, 155, 45, 0.2); /* Gold shadow for hover effect */
+}
+
+.policy-icon {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.policy-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.policy-desc {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #ccc; /* Light gray for better readability */
+}
+/* About Section */
+.about {
+  padding: 80px 0;
+  background-color: #000; /* Black background */
+}
+
+.about-image img {
+  border-radius: 10px; /* Rounded corners for the image */
+}
+
+.heading-subtitle {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.heading-title {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.heading-desc {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #ccc; /* Light gray for better readability */
+  margin-bottom: 20px;
+}
+
+.about-features {
+  margin-top: 30px;
+}
+
+.feature-item {
+  background-color: #1a1a1a; /* Slightly lighter black for contrast */
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.feature-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(204, 155, 45, 0.2); /* Gold shadow for hover effect */
+}
+
+.feature-icon {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.feature-title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.feature-desc {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #ccc; /* Light gray for better readability */
+}
+
+.btn--primary {
+  background-color: #cc9b2d; /* Gold background for the button */
+  color: #000; /* Black text for contrast */
+  border: none;
+  padding: 12px 30px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.btn--primary:hover {
+  background-color: #b8860b; /* Darker gold on hover */
+}
+/* Footer */
+.footer {
+  padding: 60px 0 20px;
+  background-color: #000; /* Black background */
+}
+
+.footer-top {
+  padding-bottom: 40px;
+}
+
+.footer-logo img {
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+.footer p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #ccc; /* Light gray for better readability */
+}
+
+.footer-widgets {
+  margin-bottom: 30px;
+}
+
+.widget-title {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #cc9b2d; /* Gold for headings */
+}
+
+.footer-widget ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-widget ul li {
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #ccc; /* Light gray for text */
+}
+
+.footer-widget ul li i {
+  margin-right: 20px;
+  font-size: 16px;
+}
+
+.footer-socials ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-socials ul li {
+  margin-bottom: 10px;
+}
+
+.footer-socials ul li a {
+  color: #ccc; /* Light gray for text */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-socials ul li a:hover {
+  color: #cc9b2d; /* Gold on hover */
+}
+
+.footer-bottom {
+  padding: 20px 0;
+  background-color: #1a1a1a; /* Slightly lighter black for contrast */
+}
+
+.footer-bottom hr {
+  border-color: #cc9b2d; /* Gold divider line */
+}
+
+.footer-copyright {
+  font-size: 14px;
+  color: #ccc; /* Light gray for text */
+}
 /*------------------------------------*\
     #BACKGROUNDS
 \*------------------------------------*/
