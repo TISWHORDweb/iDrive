@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="DriverConnect Team" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="DriverConnect - Find professional drivers for your car and travel with ease." />
+    <title>DriverConnect - Hire a Professional Driver for Your Car</title>
+    <link href="assets/images/favicon/favicon.png" rel="icon" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&amp;family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+        rel="stylesheet" />
+
+    <!-- Stylesheets -->
+    <link href="assets/css/vendor.min.css" rel="stylesheet" />
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+</head>
+
+<style>
+    /* Custom Styles */
+    .bg-black {
+        background-color: #000;
+    }
+
+    .text-gold {
+        color: #cc9b2d;
+    }
+
+    .bg-gold {
+        background-color: #cc9b2d;
+    }
+
+    .border-gold {
+        border-color: #cc9b2d !important;
+    }
+
+    .py-100 {
+        padding: 100px 0;
+    }
+
+    .rounded-lg {
+        border-radius: 10px;
+    }
+
+    .icon-circle {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+    }
+
+    .about-image {
+        position: relative;
+    }
+
+    .image-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.3;
+    }
+
+    .stats-box {
+        position: absolute;
+        bottom: -30px;
+        right: 30px;
+        width: 80%;
+        z-index: 2;
+    }
+
+    .counter {
+        font-size: 36px;
+        font-weight: 700;
+    }
+
+    .team-img {
+        width: 150px;
+        height: 150px;
+        border: 3px solid #cc9b2d;
+    }
+
+    .team-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .divider {
+        width: 80px;
+        height: 3px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .btn--primary {
+        background-color: #cc9b2d;
+        color: #000;
+        font-weight: 600;
+        padding: 12px 30px;
+        border-radius: 5px;
+        transition: all 0.3s;
+    }
+
+    .btn--primary:hover {
+        background-color: #e0b450;
+        transform: translateY(-3px);
+        box-shadow: 0 5px 15px rgba(204, 155, 45, 0.3);
+    }
+
+    .btn--outline {
+        border: 2px solid #cc9b2d;
+        color: #cc9b2d;
+        font-weight: 600;
+        padding: 10px 30px;
+        border-radius: 5px;
+        transition: all 0.3s;
+    }
+
+    .btn--outline:hover {
+        background-color: #cc9b2d;
+        color: #000;
+    }
+</style>
+
+<body class="body-scroll">
+    <!-- Document Wrapper-->
+    <div class="wrapper clearfix" id="wrapperParallax">
+        <!--   
+      Header
+      =============================================  
+      -->
+        <header class="header header-light header-sticky">
+            <nav class="navbar navbar-sticky navbar-expand-lg" id="primary-menu">
+                <div class="container">
+                    <a class="logo navbar-brand" href="index.html">
+                        <img class="logo logo-dark" src="assets/images/logo/logg.jpeg"
+                            style="width: 100px !important;"="DriverConnect Logo" />
+                        <img class="logo logo-light" src="assets/images/logo/logg.jpeg" style="width: 100px !important;"
+                            alt="DriverConnect Logo" />
+                    </a>
+                    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
+                        data-target="#navbarContent" aria-expanded="false">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarContent">
+                        <ul class="navbar-nav ml-auto">
+                            <!-- <li class="nav-item active"><a class="nav-link" data-scroll="scrollTo" href="#hero">Home</a> -->
+                            <!-- </li>
+                            <li class="nav-item"><a class="nav-link" data-scroll="scrollTo"
+                                    href="#services">Services</a></li>
+                            <li class="nav-item"><a class="nav-link" data-scroll="scrollTo" href="#about">About</a></li>
+                            <li class="nav-item"><a class="nav-link" data-scroll="scrollTo" href="#price">Price</a></li>
+                            <li class="nav-item"><a class="nav-link" data-scroll="scrollTo" href="#mode">Policy</a></li>
+                            <li class="nav-item"><a class="nav-link" data-scroll="scrollTo"
+                                    href="#testimonials">Testimonials</a></li> -->
+                        </ul>
+                        <div class="module-container">
+                            <div class="module module-cta">
+                                <a class="btn btn--primary" data-scroll="scrollTo" href="index.html#find-driver"> <span>Book a
+                                        Driver</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <section class="about bg-black pt-100 mb-0" id="about">
+            <div class="container">
+                <!-- Section Header -->
+                <div class="section-header text-center mb-60">
+                    <p class="section-subtitle" style="color: #cc9b2d;">GET TO KNOW US</p>
+                    <h2 class="section-title text-white">Your Trusted Driving Solution</h2>
+                    <div class="divider mx-auto" style="background-color: #cc9b2d;"></div>
+                </div>
+
+                <div class="row align-items-center">
+                    <!-- Image Column -->
+                    <div class="col-12 col-lg-6 mb-5 mb-lg-0">
+                        <div class="about-image position-relative">
+                            <img class="img-fluid rounded-lg shadow-lg" src="assets/images/background/3.jpg"
+                                alt="Professional driver opening car door for client" />
+                            <div class="image-overlay" style="background: rgba(204, 155, 45, 0.2);"></div>
+
+                            <!-- Stats Counter -->
+                            <div class="stats-box bg-dark p-4 rounded-lg shadow">
+                                <div class="row">
+                                    <div class="col-6 text-center border-right border-gold">
+                                        <h3 class="text-gold mb-0 counter" data-count="5000">0</h3>
+                                        <p class="text-white mb-0">Happy Clients</p>
+                                    </div>
+                                    <div class="col-6 text-center">
+                                        <h3 class="text-gold mb-0 counter" data-count="250">0</h3>
+                                        <p class="text-white mb-0">Verified Drivers</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Content Column -->
+                    <div class="col-12 col-lg-6">
+                        <div class="heading mb-40">
+                            <p class="heading-subtitle" style="color: #cc9b2d;">WHO WE ARE</p>
+                            <h2 class="heading-title text-white">WiDrive to Save You Stress!</h2>
+                            <p class="heading-desc text-white">
+                                Founded on March 4, 2020, WiDrive is a tech-driven mobility solution revolutionizing
+                                personal transportation.
+                                We empower clients to enjoy their vehicles without the hassle of driving. Whether you're
+                                fatigued,
+                                celebrating, or simply prefer to relax, our professional drivers ensure you arrive
+                                safely and comfortably.
+                            </p>
+
+                            <div class="mission-vision mt-4">
+                                <div class="d-flex mb-3">
+                                    <div class="mr-3">
+                                        <i class="fas fa-bullseye text-gold" style="font-size: 24px;"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="text-white">Our Mission</h4>
+                                        <p class="text-white mb-0">
+                                            To redefine personal transportation by providing secure, reliable, and
+                                            convenient driver services that
+                                            enhance our clients' quality of life.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex">
+                                    <div class="mr-3">
+                                        <i class="fas fa-eye text-gold" style="font-size: 24px;"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="text-white">Our Vision</h4>
+                                        <p class="text-white mb-0">
+                                            To become Africa's leading on-demand driver service, setting the standard
+                                            for safety, convenience,
+                                            and customer satisfaction in personal transportation.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Key Features with Icons -->
+                        <div class="about-features mb-40">
+                            <div class="row">
+                                <div class="col-12 col-md-6 mb-4">
+                                    <div class="feature-item bg-dark p-4 rounded-lg h-100">
+                                        <div class="feature-icon mb-3">
+                                            <div class="icon-circle bg-gold text-dark">
+                                                <i class="fas fa-shield-alt"></i>
+                                            </div>
+                                        </div>
+                                        <h4 class="feature-title text-white">Safety First</h4>
+                                        <p class="feature-desc text-white">
+                                            All drivers undergo 5-stage verification including background checks, KYC
+                                            validation, and defensive
+                                            driving certification.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-md-6 mb-4">
+                                    <div class="feature-item bg-dark p-4 rounded-lg h-100">
+                                        <div class="feature-icon mb-3">
+                                            <div class="icon-circle bg-gold text-dark">
+                                                <i class="fas fa-clock"></i>
+                                            </div>
+                                        </div>
+                                        <h4 class="feature-title text-white">Flexible Services</h4>
+                                        <p class="feature-desc text-white">
+                                            Customizable plans from 1-hour trips to weekly engagements. No long-term
+                                            commitments - use only when needed.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-md-6 mb-4">
+                                    <div class="feature-item bg-dark p-4 rounded-lg h-100">
+                                        <div class="feature-icon mb-3">
+                                            <div class="icon-circle bg-gold text-dark">
+                                                <i class="fas fa-car"></i>
+                                            </div>
+                                        </div>
+                                        <h4 class="feature-title text-white">Your Car, Your Rules</h4>
+                                        <p class="feature-desc text-white">
+                                            Travel in the comfort of your own vehicle while we handle the driving.
+                                            Maintain your preferred climate,
+                                            music, and seating.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-md-6 mb-4">
+                                    <div class="feature-item bg-dark p-4 rounded-lg h-100">
+                                        <div class="feature-icon mb-3">
+                                            <div class="icon-circle bg-gold text-dark">
+                                                <i class="fas fa-map-marker-alt"></i>
+                                            </div>
+                                        </div>
+                                        <h4 class="feature-title text-white">Nationwide Coverage</h4>
+                                        <p class="feature-desc text-white">
+                                            Available in all major cities with expanding coverage. Interstate trips
+                                            accommodated with advance notice.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Call-to-Action Buttons -->
+                        <!-- <div class="d-flex flex-column flex-sm-row">
+                            <a class="btn btn--primary mr-sm-3 mb-3 mb-sm-0" href="#find-driver">
+                                <i class="fas fa-search mr-2"></i> Find a Driver
+                            </a>
+                            <a class="btn btn--outline" href="#contact">
+                                <i class="fas fa-phone-alt mr-2"></i> Contact Us
+                            </a>
+                        </div> -->
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- 
+      Footer
+      ============================================= 
+      -->
+        <footer class="footer bg-black pt-0" id="footer">
+            <div class="footer-top">
+                <div class="container">
+                    <div class="row">
+                        <!-- Logo and Description -->
+                        <div class="col-12 col-md-4 mb-5 mb-md-0">
+                            <div class="footer-logo">
+                                <a class="logo" href="index.html">
+                                    <img class="logo logo-light" style="width: 150px;"
+                                        src="assets/images/logo/lognew.jpeg" alt="WiDrive Logo" />
+                                </a>
+                            </div>
+                            <p class="text-white">
+                                WiDrive helps car owners find professional drivers for safe and comfortable trips.
+                                Whether for daily
+                                commutes, road trips, or special events, we've got you covered.
+                            </p>
+                        </div>
+
+                        <!-- Contact Information -->
+                        <div class="col-12 col-md-4 mb-5 mb-md-0">
+                            <div class="footer-widget">
+                                <h6 class="widget-title text-white">Contact Us</h6>
+                                <ul class="list-unstyled">
+                                    <li class="text-white">
+                                        <i class="fas fa-phone" style="color: #cc9b2d;"></i>
+                                        <a href="tel:+2348092378844" class="text-white">+234 809 237 8844</a>
+                                    </li>
+                                    <li class="text-white">
+                                        <i class="fas fa-envelope" style="color: #cc9b2d;"></i>
+                                        <a href="mailto:Info@widriveapp.com" class="text-white">Info@widriveapp.com</a>
+                                    </li>
+                                    <li class="text-white">
+                                        <i class="fas fa-globe" style="color: #cc9b2d;"></i>
+                                        <a href="https://www.widriveapp.com" target="_blank"
+                                            class="text-white">www.widriveapp.com</a>
+                                    </li>
+                                    <li class="text-white">
+                                        <i class="fas fa-map-marker-alt" style="color: #cc9b2d;"></i>
+                                        <span>Temporary Office: Close 54, Victoria Garden City</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Social Media Links -->
+                        <div class="col-12 col-md-4">
+                            <div class="footer-widget">
+                                <h6 class="widget-title text-white">Follow Us</h6>
+                                <div class="footer-socials">
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a href="https://facebook.com/Widriveapp" target="_blank"
+                                                class="text-white">
+                                                <i class="fab fa-facebook-f" style="color: #cc9b2d;"></i> Facebook
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://instagram.com/Widriveapp" target="_blank"
+                                                class="text-white">
+                                                <i class="fab fa-instagram" style="color: #cc9b2d;"></i> Instagram
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://twitter.com/Widriveapp" target="_blank" class="text-white">
+                                                <i class="fab fa-twitter" style="color: #cc9b2d;"></i> Twitter
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://tiktok.com/@Widriveapp" target="_blank" class="text-white">
+                                                <i class="fab fa-tiktok" style="color: #cc9b2d;"></i> TikTok
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://youtube.com/@Widriveapp" target="_blank"
+                                                class="text-white">
+                                                <i class="fab fa-youtube" style="color: #cc9b2d;"></i> YouTube
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <div class="container">
+                    <hr class="bg-cc9b2d" /> <!-- Gold divider line -->
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <div class="footer-copyright">
+                                <span class="text-white">2024 &copy; WiDrive. All rights reserved.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!--  Footer Scripts==
+    -->
+    <script src="assets/js/vendor/jquery-3.4.1.min.js"></script>
+    <script src="assets/js/vendor.min.js"></script>
+    <script src="assets/js/functions.js"></script>
+
+    <script>
+        // Simple counter animation
+        document.addEventListener('DOMContentLoaded', function () {
+            const counters = document.querySelectorAll('.counter');
+            const speed = 200;
+
+            counters.forEach(counter => {
+                const target = +counter.getAttribute('data-count');
+                const count = +counter.innerText;
+                const increment = target / speed;
+
+                if (count < target) {
+                    counter.innerText = Math.ceil(count + increment);
+                    setTimeout(updateCount, 1);
+                } else {
+                    counter.innerText = target;
+                }
+
+                function updateCount() {
+                    const current = +counter.innerText;
+                    if (current < target) {
+                        counter.innerText = Math.ceil(current + increment);
+                        setTimeout(updateCount, 1);
+                    } else {
+                        counter.innerText = target;
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
